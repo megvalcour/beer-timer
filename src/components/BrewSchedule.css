@@ -1,0 +1,22 @@
+.brewSchedule {
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--spacer-lg);
+}
+
+.brewSchedule__colon {
+    color: var(--color-atomic-tangerine);
+}
+
+.brewSchedule__timer {
+    font-size: 2.4rem;
+}
+
+.brewSchedule__step {
+    font-size: 1.5rem;
+}
+
+.brewSchedule__stepTitle {
+    font-size: 1.2rem;
+    color: var(--color-atomic-tangerine);
+}

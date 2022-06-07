@@ -1,0 +1,86 @@
+.brewField__fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--spacer-md);
+}
+
+.brewField__fieldset.-disabled {
+    opacity: 0.3;
+}
+
+.brewField__stepNumber {
+    grid-column: 1;
+}
+
+.brewField__form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--spacer-lg);
+}
+
+.brewField__formGroups {
+    grid-column: 2;
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--spacer-md);
+}
+
+.brewField__formGroup {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.brewField__formGroup.-fields {
+    display: flex;
+    gap: var(--spacer-md);
+}
+
+.brewField__formGroup.-time {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 10rem);
+}
+
+.brewField__formButtons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--spacer-sm);
+    align-items: center;
+}
+
+.brewField__label {
+    font-size: 1rem;
+    grid-column: 2;
+    text-align: left;
+}
+
+.brewField__input {
+    font-size: 1rem;
+    background-color: var(--color-input);
+    padding: var(--spacer-sm);
+    box-shadow: inset 0px 0px 6px #000000e5;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.brewField__circleButton {
+    width: var(--spacer-lg);
+    height: var(--spacer-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: var(--font-size-md);
+}
+
+.brewField__circleButton.-add {
+    background-color: var(--color-green);
+}
+
+.brewField__circleButton.-delete {
+    background-color: var(--color-red);
+}
+
+::placeholder {
+    color: gray;
+}

@@ -1,13 +1,75 @@
+:root {
+    --color-atomic-tangerine: #f29559;
+    --color-deep-champagne: #f2d492;
+    --color-dried-sage: #b8b08d;
+    --color-ocean-depth: #283845;
+    --color-starless-night: #202c39;
+
+    --color-green: #40a06a;
+    --color-red: #f02d3a;
+    --color-yellow: yellow;
+
+    --color-white: #ffffff;
+
+    --color-primary: var(--color-atomic-tangerine);
+    --color-secondary: var(--color-deep-champagne);
+    --color-tertiary: var(--color-dried-sage);
+
+    --color-dark: var(--color-ocean-depth);
+    --color-black: var(--color-starless-night);
+
+    --color-background: var(--color-dark);
+    --color-input: var(--color-black);
+
+    --spacer-sm: 0.5rem;
+    --spacer-md: 1rem;
+    --spacer-lg: 2rem;
+
+    --font-family: "Staatliches", cursive;
+
+    --font-size-sm: 0.75rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.75rem;
+
+    --border-radius: 6px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--color-deep-champagne);
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+button {
+    --transition: 300ms ease;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: var(--spacer-sm);
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+button.-green {
+    background-color: var(--color-green);
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
 }
