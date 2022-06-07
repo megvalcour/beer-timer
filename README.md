@@ -12,6 +12,7 @@ Brew Timer (https://beer-timer.netlify.app/) is a tool for homebrewers to manage
 
 -   Customize boil time. Currently, it is hard-coded at 1 hour.
 -   Add a back button to edit and/or cancel the current brew schedule.
+-   Add error handling/validation (no empty steps, no empty time entries, etc.)
 -   Add a 'light' mode (currently defaults to a dark mode).
 -   Add a help/intro screen.
 
